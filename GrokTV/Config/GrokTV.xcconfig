@@ -1,0 +1,11 @@
+// GrokTV.xcconfig
+// Shared build settings for the GrokTV tvOS target.
+//
+// Your real API key lives in Config/Secrets.xcconfig (git-ignored).
+// Copy Secrets.example.xcconfig -> Secrets.xcconfig and fill in XAI_API_KEY.
+
+// Default (empty) so the build works even without Secrets.xcconfig.
+XAI_API_KEY =
+
+// Optional include: silently skipped if the file does not exist.
+#include? "Secrets.xcconfig"

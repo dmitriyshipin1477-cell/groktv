@@ -1,0 +1,32 @@
+# Optional XcodeGen spec: `brew install xcodegen && xcodegen generate`
+# regenerates GrokTV.xcodeproj from this file.
+name: GrokTV
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    tvOS: "17.0"
+targets:
+  GrokTV:
+    type: application
+    platform: tvOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: GrokTV
+    configFiles:
+      Debug: Config/GrokTV.xcconfig
+      Release: Config/GrokTV.xcconfig
+    dependencies:
+      - sdk: SwiftUI.framework
+      - sdk: Foundation.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.GrokTV
+        INFOPLIST_FILE: GrokTV/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "3"
+        TVOS_DEPLOYMENT_TARGET: "17.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic

@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093055DA99FE1658C9718111 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABED203CEA17CDAA6B1727E1 /* ChatViewModel.swift */; };
+		275870E9487A47AC79F55F7B /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392746E86714460E44DD3BC5 /* MessageBubbleView.swift */; };
+		277A7D365C1E56F8BB09CF44 /* XAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D30BAD525EE0E68278B52D /* XAIClient.swift */; };
+		3A4559E5B47D11E868EB0B8F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B318D0F3DA677C7F5971599 /* ChatView.swift */; };
+		3DCA62D81ABF69494841747B /* ComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0740CD64C982651AF0D515DB /* ComposerView.swift */; };
+		69CEC5686E4E56CCA8F4E173 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264B1EAAD848B08FE1508348 /* SwiftUI.framework */; };
+		7B86F5AF13487927C3CF6174 /* GrokTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0617B70F9B169F2863A8265B /* GrokTVApp.swift */; };
+		831FDE150BAC3C76FE2AB30F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A7D828357199987F94E96F /* Foundation.framework */; };
+		9F95FF9513EA84061A15F712 /* SSEParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A381570B46DB3AF1685BFA /* SSEParser.swift */; };
+		A2971050EF946CBE63A1049D /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488F47AEA2B66A7CE4AECAA2 /* EmptyStateView.swift */; };
+		A3CE876236AC257EA80D968D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C60EC283D2697F9F2F1222A /* Assets.xcassets */; };
+		AE411AC3195B6A48E26123FB /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F7B9FA45B63A28A55D7DF /* APIModels.swift */; };
+		C0465F42CCF830B730664F78 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CBB2A16899423AB029BB63 /* ChatMessage.swift */; };
+		CEC2DDC82BDDE3B491CBD303 /* ErrorBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DCBCE47859FCE67ED16E9 /* ErrorBannerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02A381570B46DB3AF1685BFA /* SSEParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEParser.swift; sourceTree = "<group>"; };
+		0617B70F9B169F2863A8265B /* GrokTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokTVApp.swift; sourceTree = "<group>"; };
+		0740CD64C982651AF0D515DB /* ComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerView.swift; sourceTree = "<group>"; };
+		264B1EAAD848B08FE1508348 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		32F2FA94856F07C65B4BB8E3 /* Secrets.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.example.xcconfig; sourceTree = "<group>"; };
+		38A7D828357199987F94E96F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		392746E86714460E44DD3BC5 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		44D30BAD525EE0E68278B52D /* XAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAIClient.swift; sourceTree = "<group>"; };
+		488F47AEA2B66A7CE4AECAA2 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		5B318D0F3DA677C7F5971599 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		60CBB2A16899423AB029BB63 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		6E068AFE4DD0112ECF4F53EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792DCBCE47859FCE67ED16E9 /* ErrorBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBannerView.swift; sourceTree = "<group>"; };
+		996AD237BC284D463E664FFE /* GrokTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrokTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C60EC283D2697F9F2F1222A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3E6F5B71764606BDAB394EF /* GrokTV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GrokTV.xcconfig; sourceTree = "<group>"; };
+		ABED203CEA17CDAA6B1727E1 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		F95F7B9FA45B63A28A55D7DF /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FCBC29864E7C7752B7E193F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CEC5686E4E56CCA8F4E173 /* SwiftUI.framework in Frameworks */,
+				831FDE150BAC3C76FE2AB30F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2C978E52A76F0AA9F68BB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996AD237BC284D463E664FFE /* GrokTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20EBAD96881C726E996FC064 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ABED203CEA17CDAA6B1727E1 /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20F4BD606C0F6D1645AE4919 /* GrokTV */ = {
+			isa = PBXGroup;
+			children = (
+				0617B70F9B169F2863A8265B /* GrokTVApp.swift */,
+				F3FC2AE7CE6848A7234310B5 /* Models */,
+				5701668AAAF5895FE0759242 /* Services */,
+				20EBAD96881C726E996FC064 /* ViewModels */,
+				C5924FF13CCFEDECCEFE8723 /* Views */,
+				9C60EC283D2697F9F2F1222A /* Assets.xcassets */,
+				6E068AFE4DD0112ECF4F53EF /* Info.plist */,
+			);
+			path = GrokTV;
+			sourceTree = "<group>";
+		};
+		2B731CEFC6751AAE0EC69B98 = {
+			isa = PBXGroup;
+			children = (
+				20F4BD606C0F6D1645AE4919 /* GrokTV */,
+				5386A2EAF0036C0154CF9012 /* Config */,
+				EC148643C97903A61FBA5521 /* Frameworks */,
+				0A2C978E52A76F0AA9F68BB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5386A2EAF0036C0154CF9012 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A3E6F5B71764606BDAB394EF /* GrokTV.xcconfig */,
+				32F2FA94856F07C65B4BB8E3 /* Secrets.example.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5701668AAAF5895FE0759242 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44D30BAD525EE0E68278B52D /* XAIClient.swift */,
+				02A381570B46DB3AF1685BFA /* SSEParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C5924FF13CCFEDECCEFE8723 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B318D0F3DA677C7F5971599 /* ChatView.swift */,
+				392746E86714460E44DD3BC5 /* MessageBubbleView.swift */,
+				0740CD64C982651AF0D515DB /* ComposerView.swift */,
+				488F47AEA2B66A7CE4AECAA2 /* EmptyStateView.swift */,
+				792DCBCE47859FCE67ED16E9 /* ErrorBannerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC148643C97903A61FBA5521 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				264B1EAAD848B08FE1508348 /* SwiftUI.framework */,
+				38A7D828357199987F94E96F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3FC2AE7CE6848A7234310B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60CBB2A16899423AB029BB63 /* ChatMessage.swift */,
+				F95F7B9FA45B63A28A55D7DF /* APIModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* GrokTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449CDAD090025738145986EB /* Build configuration list for PBXNativeTarget "GrokTV" */;
+			buildPhases = (
+				C197A1D4E0DE673615AC32CB /* Sources */,
+				4FCBC29864E7C7752B7E193F /* Frameworks */,
+				8A6A452CEE30B0908A47D41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrokTV;
+			productName = GrokTV;
+			productReference = 996AD237BC284D463E664FFE /* GrokTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CE36D6306C17890370B358E3 /* Build configuration list for PBXProject "GrokTV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B731CEFC6751AAE0EC69B98;
+			productRefGroup = 0A2C978E52A76F0AA9F68BB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* GrokTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A6A452CEE30B0908A47D41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CE876236AC257EA80D968D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C197A1D4E0DE673615AC32CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B86F5AF13487927C3CF6174 /* GrokTVApp.swift in Sources */,
+				C0465F42CCF830B730664F78 /* ChatMessage.swift in Sources */,
+				AE411AC3195B6A48E26123FB /* APIModels.swift in Sources */,
+				277A7D365C1E56F8BB09CF44 /* XAIClient.swift in Sources */,
+				9F95FF9513EA84061A15F712 /* SSEParser.swift in Sources */,
+				093055DA99FE1658C9718111 /* ChatViewModel.swift in Sources */,
+				3A4559E5B47D11E868EB0B8F /* ChatView.swift in Sources */,
+				275870E9487A47AC79F55F7B /* MessageBubbleView.swift in Sources */,
+				3DCA62D81ABF69494841747B /* ComposerView.swift in Sources */,
+				A2971050EF946CBE63A1049D /* EmptyStateView.swift in Sources */,
+				CEC2DDC82BDDE3B491CBD303 /* ErrorBannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27215BEB910BA504F03CFB6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		2FDC84E905F8E643EE1884BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AF3EE45171718374DFFC705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E6F5B71764606BDAB394EF /* GrokTV.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8KBZK2K5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GrokTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitriy.groktv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		5CFA188EA7F352255591A33B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E6F5B71764606BDAB394EF /* GrokTV.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8KBZK2K5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GrokTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitriy.groktv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		449CDAD090025738145986EB /* Build configuration list for PBXNativeTarget "GrokTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF3EE45171718374DFFC705 /* Debug */,
+				5CFA188EA7F352255591A33B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE36D6306C17890370B358E3 /* Build configuration list for PBXProject "GrokTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27215BEB910BA504F03CFB6F /* Debug */,
+				2FDC84E905F8E643EE1884BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
